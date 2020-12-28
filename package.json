@@ -32,11 +32,6 @@
 		"type": "git",
 		"url": "git+https://github.com/SaekiTominaga/document-generate-id.git"
 	},
-	"keywords": [
-		"web-components",
-		"custom-elements",
-		"switch"
-	],
 	"author": "Saeki Tominaga",
 	"license": "MIT",
 	"bugs": {
