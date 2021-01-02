@@ -1,6 +1,6 @@
 {
 	"name": "@saekitominaga/document-generate-id",
-	"version": "1.0.2",
+	"version": "1.1.0",
 	"description": "Generate a unique ID in Document.",
 	"type": "module",
 	"devDependencies": {
