@@ -10,7 +10,7 @@ Generate a unique ID in Document.
 
 ## Examples
 
-```
+```JavaScript
 import DocumentId from '@saekitominaga/document-generate-id';
 
 const documentId1 = new DocumentId();
@@ -27,7 +27,7 @@ documentId2.generate(); // e.g. js-7f3h1w:l
 
 ## Constructor
 
-```
+```TypeScript
 new DocumentId(
 	length = 10,
 	charactorType = {
