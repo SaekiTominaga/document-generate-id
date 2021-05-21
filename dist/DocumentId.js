@@ -14,8 +14,6 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
 var _length, _charactors, _prefix, _trialLimit;
 /**
  * Generate a unique ID in Document
- *
- * @version 1.1.0
  */
 export default class {
     /**
