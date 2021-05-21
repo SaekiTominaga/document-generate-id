@@ -98,4 +98,4 @@ export default class {
     }
 }
 _length = new WeakMap(), _charactors = new WeakMap(), _prefix = new WeakMap(), _trialLimit = new WeakMap();
-//# sourceMappingURL=DocumentId.js.map
+//# sourceMappingURL=DocumentGenerateId.js.map

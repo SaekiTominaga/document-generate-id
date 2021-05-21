@@ -30,4 +30,4 @@ export default class {
     generate(): string;
 }
 export {};
-//# sourceMappingURL=DocumentId.d.ts.map
+//# sourceMappingURL=DocumentGenerateId.d.ts.map

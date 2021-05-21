@@ -13,9 +13,9 @@
 		"src"
 	],
 	"type": "module",
-	"main": "dist/DocumentId.js",
-	"module": "dist/DocumentId.js",
-	"types": "dist/DocumentId.d.ts",
+	"main": "dist/DocumentGenerateId.js",
+	"module": "dist/DocumentGenerateId.js",
+	"types": "dist/DocumentGenerateId.d.ts",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/SaekiTominaga/document-generate-id.git"

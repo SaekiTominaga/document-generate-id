@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<title>`DocumentId.js` Demo</title>
+		<title>`DocumentGenerateId.js` Demo</title>
 		<style>
 			fieldset {
 				margin: 1em 0;
@@ -28,7 +28,7 @@
 			}
 		</style>
 		<script type="module">
-			import DocumentId from './dist/DocumentId.js';
+			import DocumentGenerateId from './dist/DocumentGenerateId.js';
 
 			document.getElementById('generate').addEventListener(
 				'click',
@@ -46,8 +46,8 @@
 					const outputElement = document.getElementById('output');
 
 					try {
-						const documentId = new DocumentId(length, charactorType, prefix, trialLimit);
-						outputElement.value = documentId.generate();
+						const documentGenerateId = new DocumentGenerateId(length, charactorType, prefix, trialLimit);
+						outputElement.value = documentGenerateId.generate();
 					} catch (e) {
 						outputElement.value = e;
 					}
@@ -57,7 +57,7 @@
 		</script>
 	</head>
 	<body>
-		<h1>`DocumentId.js` Demo</h1>
+		<h1>`DocumentGenerateId.js` Demo</h1>
 
 		<fieldset>
 			<legend>Length of ID (Excluding the prefix part)</legend>

@@ -11,24 +11,24 @@ Generate a unique ID in Document.
 ## Examples
 
 ```JavaScript
-import DocumentId from '@saekitominaga/document-generate-id';
+import DocumentGenerateId from '@saekitominaga/document-generate-id';
 
-const documentId1 = new DocumentId();
-documentId1.generate(); // e.g. GUaHJ6ao5m
+const documentGenerateId1 = new DocumentGenerateId();
+documentGenerateId1.generate(); // e.g. GUaHJ6ao5m
 
-const documentId2 = new DocumentId(8, {
+const documentGenerateId2 = new DocumentGenerateId(8, {
   alphalower: true,
   alphaupper: false,
   number: true,
   symbol: '-_:.',
 }, 'js-', 3);
-documentId2.generate(); // e.g. js-7f3h1w:l
+documentGenerateId2.generate(); // e.g. js-7f3h1w:l
 ```
 
 ## Constructor
 
 ```TypeScript
-new DocumentId(
+new DocumentGenerateId(
 	length = 10,
 	charactorType = {
 		alphalower: true,
@@ -44,29 +44,30 @@ new DocumentId(
 ### Parameters
 
 <dl>
-<dt>length [Optional]</dt>
+<dt><code>length</code> [Optional]</dt>
 <dd>Length of ID (Excluding the prefix part)</dd>
-<dt>charactorType [Optional]</dt>
+<dt><code>charactorType</code> [Optional]</dt>
 <dd>Type of characters used for ID
 	<dl>
-	<dt>alphalower [Optional]</dt>
+	<dt><code>alphalower</code> [Optional]</dt>
 	<dd>[a-z]</dd>
-	<dt>alphaupper [Optional]</dt>
+	<dt><code>alphaupper</code> [Optional]</dt>
 	<dd>[A-Z]</dd>
-	<dt>number [Optional]</dt>
+	<dt><code>number</code> [Optional]</dt>
 	<dd>[0-9]</dd>
-	<dt>symbol [Optional]</dt>
+	<dt><code>symbol</code> [Optional]</dt>
 	<dd>Enumerate symbol characters (e.g. '-_:.')</dd>
 	</dl>
 </dd>
-<dt>prefix [Optional]</dt>
+<dt><code>prefix</code> [Optional]</dt>
 <dd>Prefix of ID</dd>
-<dt>trialLimit [Optional]</dt>
+<dt><code>trialLimit</code> [Optional]</dt>
 <dd>Maximum number of attempts if the generated ID exists in the document</dd>
 </dl>
 
 ## Methods
 
-| Name | Returns | Description |
-|-|-|-|
-| generate() | {string} Value of ID | Generate a unique ID in document |
+<dl>
+<dt><code>generate(): string</code></dt>
+<dd>Generate a unique ID in document</dd>
+</dl>
