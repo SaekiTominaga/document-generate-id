@@ -13,31 +13,23 @@
 		"src"
 	],
 	"type": "module",
-	"browser": "dist/DocumentId.js",
+	"main": "dist/DocumentId.js",
+	"module": "dist/DocumentId.js",
 	"types": "dist/DocumentId.d.ts",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/SaekiTominaga/document-generate-id.git"
 	},
 	"scripts": {
-		"_build:tsc": "tsc -w",
-		"_build:compress": "onchange -f add -f change -v dist/DocumentId.js -- brotlin compress dist/DocumentId.js -m 1",
-		"_build:minify": "onchange -f add -f change -v dist/DocumentId.js -- terser dist/DocumentId.js -o dist/DocumentId.min.js -c ecma=2020 --mangle --ecma 2020 --module --source-map content='dist/DocumentId.js.map',filename='DocumentId.js',includeSources,url='DocumentId.min.js.map'",
-		"_build:minify-compress": "onchange -f add -f change -v dist/DocumentId.min.js -- brotlin compress dist/DocumentId.min.js -m 1",
-		"_build:minify-declaration": "onchange -f add -f change -v dist/DocumentId.d.ts -- cpy dist/DocumentId.d.ts dist --rename=DocumentId.min.d.ts",
-		"build": "run-p _build:*"
+		"build": "tsc",
+		"watch": "tsc -w"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^4.11.1",
 		"@typescript-eslint/parser": "^4.11.1",
-		"brotlin": "^1.1.0",
-		"cpy-cli": "^3.1.1",
 		"eslint": "^7.17.0",
 		"eslint-config-prettier": "^7.1.0",
 		"eslint-plugin-jsdoc": "^30.7.9",
-		"npm-run-all": "^4.1.5",
-		"onchange": "^7.1.0",
-		"terser": "^5.5.1",
 		"typescript": "^4.1.3"
 	},
 	"publishConfig": {
